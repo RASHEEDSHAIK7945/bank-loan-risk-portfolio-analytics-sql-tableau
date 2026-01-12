@@ -1,6 +1,7 @@
 /* ============================================================
    FILE: 01_data_quality_checks.sql
    PROJECT: Bank Loan Risk & Portfolio Analytics
+   DATABASE: SQL Server
    PURPOSE:
    Perform initial data quality and profiling checks on
    the customers, loans, and loan_status tables before analysis.
@@ -13,12 +14,12 @@
 
 -- Check for NULL values in primary key
 SELECT COUNT(*) AS null_customer_id_count
-FROM bank.customers
+FROM bank.Customers
 WHERE customer_id IS NULL;
 
 -- Check for duplicate customer IDs
 SELECT customer_id, COUNT(*) AS record_count
-FROM bank.customers
+FROM bank.Customers
 GROUP BY customer_id
 HAVING COUNT(*) > 1;
 
@@ -34,7 +35,7 @@ SELECT
     SUM(CASE WHEN education IS NULL THEN 1 ELSE 0 END) AS null_education,
     SUM(CASE WHEN region IS NULL THEN 1 ELSE 0 END) AS null_region,
     SUM(CASE WHEN annual_income IS NULL THEN 1 ELSE 0 END) AS null_annual_income
-FROM bank.customers;
+FROM bank.Customers;
 
 
 /* ============================================================
@@ -43,14 +44,14 @@ FROM bank.customers;
 
 -- Annual income should be greater than zero
 SELECT COUNT(*) AS invalid_annual_income_count
-FROM bank.customers
+FROM bank.Customers
 WHERE annual_income <= 0;
 
 -- Age range validation
 SELECT
     MIN(age) AS min_age,
     MAX(age) AS max_age
-FROM bank.customers;
+FROM bank.Customers;
 
 
 /* ============================================================
@@ -59,26 +60,26 @@ FROM bank.customers;
 
 -- Total customers
 SELECT COUNT(customer_id) AS total_customers
-FROM bank.customers;
+FROM bank.Customers;
 
 -- Gender distribution
 SELECT gender, COUNT(*) AS customer_count
-FROM bank.customers
+FROM bank.Customers
 GROUP BY gender;
 
 -- Marital status distribution
 SELECT marital_status, COUNT(*) AS customer_count
-FROM bank.customers
+FROM bank.Customers
 GROUP BY marital_status;
 
 -- Education level distribution
 SELECT education, COUNT(*) AS customer_count
-FROM bank.customers
+FROM bank.Customers
 GROUP BY education;
 
 -- Region-wise distribution
 SELECT region, COUNT(*) AS customer_count
-FROM bank.customers
+FROM bank.Customers
 GROUP BY region;
 
 
@@ -90,7 +91,7 @@ SELECT
     marital_status,
     MIN(age) AS min_age,
     MAX(age) AS max_age
-FROM bank.customers
+FROM bank.Customers
 GROUP BY marital_status;
 
 
@@ -102,7 +103,7 @@ SELECT
     education,
     MIN(age) AS min_age,
     MAX(age) AS max_age
-FROM bank.customers
+FROM bank.Customers
 GROUP BY education;
 
 
@@ -112,11 +113,11 @@ GROUP BY education;
 
 -- Total distinct loans
 SELECT COUNT(DISTINCT loan_id) AS total_loans
-FROM bank.loan_status;
+FROM bank.Loan_status;
 
 -- Loan status distribution
 SELECT loan_status, COUNT(*) AS total_loans
-FROM bank.loan_status
+FROM bank.Loan_status
 GROUP BY loan_status;
 
 
@@ -133,13 +134,13 @@ SELECT
     MIN(issue_date) AS start_date,
     MAX(issue_date) AS end_date,
     DATEDIFF(YEAR, MIN(issue_date), MAX(issue_date)) AS total_years
-FROM bank.loans;
+FROM bank.Loans;
 
 -- Loan amount range check
 SELECT
     MIN(loan_amount) AS min_loan_amount,
     MAX(loan_amount) AS max_loan_amount
-FROM bank.loans;
+FROM bank.Loans;
 
 
 /* ============================================================
