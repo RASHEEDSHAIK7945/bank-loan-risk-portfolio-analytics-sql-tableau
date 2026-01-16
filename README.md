@@ -14,6 +14,28 @@ and Tableau for visualization and storytelling.
 
 ## Repository Structure
 
+bank-loan-risk-portfolio-analytics-sql-tableau/
+│
+├── sql/ # SQL scripts for data preparation & analytics
+│ ├── 01_data_quality_checks.sql
+│ ├── 02_data_transformation.sql
+│ ├── 03_business_logic.sql
+│ └── 04_analytical_views.sql
+│
+├── datasets/ # CSV files exported from SQL views
+│ └── README.md # Dataset description & data dictionary
+│
+├── tableau/
+│ ├── dashboard_pre_design_layout/ # draw.io wireframes used for planning
+│ ├── dashboards/ # Final dashboard screenshots
+│ └── tableau_files/ # Tableau packaged workbook (.twbx)
+│
+├── docs/
+│ └── insights_and_recommendations.md
+│
+├── README.md
+└── LICENSE
+
 ## Dashboards Overview
 
 The Tableau solution consists of the following dashboards:
