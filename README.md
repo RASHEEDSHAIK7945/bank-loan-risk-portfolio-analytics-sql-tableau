@@ -216,7 +216,7 @@ decision-making value.
 
 ## Author
 
-Rasheed Shaik  
+**RASHEED SHAIK**  
 Aspiring Data Analyst | SQL | Tableau | Data Storytelling
 
 
