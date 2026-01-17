@@ -1,6 +1,9 @@
 # Bank Loan Risk & Portfolio Analytics (SQL + Tableau)
 ## Project Overview
 
+🔗 **Interactive Tableau Dashboard**  
+👉 [View Interactive Dashboard](https://public.tableau.com/views/BankLoanRiskAnalyticsDashboard20152024/HOME?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
 This project is an end-to-end analytics solution designed to analyze a bank’s loan portfolio and assess portfolio performance, default risk, and exposure distribution over time.
 
 The objective is to support executive and risk-management decision-making by providing:
@@ -131,6 +134,41 @@ and loan term categories to analyze exposure concentration.
 Dashboard screenshots are available in:
 
  - **[tableau/dashboards/](https://github.com/RASHEEDSHAIK7945/bank-loan-risk-portfolio-analytics-sql-tableau/tree/main/tableau/dashboard_screenshots)**
+
+---
+
+## 📊 Dashboard Preview
+
+### 🏠 Home Navigation Dashboard
+Central landing page providing seamless navigation across all analytical dashboards.
+
+![Home Dashboard](tableau/dashboard_screenshots/Home_Navigation.png)
+
+---
+
+### 📈 Executive Overview Dashboard
+High-level KPIs summarizing portfolio size, risk exposure, and pricing metrics.
+
+![Executive Overview](tableau/dashboard_screenshots/Executive_Overview.png)
+
+---
+
+### 📉 Portfolio Trends Dashboard
+Time-based analysis of loan issuance, default behavior, and risk patterns.
+
+![Portfolio Trends](tableau/dashboard_screenshots/Portfolio_Trends.png)
+
+---
+
+### 📊 Portfolio Distribution Dashboard
+Breakdown of loan mix, exposure concentration, and interest rate distribution.
+
+![Portfolio Distribution](tableau/dashboard_screenshots/Portfolio_Distribution.png)
+
+---
+
+> 📌 For full interactivity, filters, and drill-downs, explore the live dashboard on Tableau Public:  
+> 👉 [View Interactive Dashboard](https://public.tableau.com/views/BankLoanRiskAnalyticsDashboard20152024/HOME?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 ---
 
