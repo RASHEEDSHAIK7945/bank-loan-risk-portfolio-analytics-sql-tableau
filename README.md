@@ -29,8 +29,10 @@ This solution enables stakeholders to:
 
 - Support data-driven lending and risk strategies
 
-## Repository Structure
 ```
+
+## Repository Structure
+
 bank-loan-risk-portfolio-analytics-sql-tableau/
 │
 ├── sql/
@@ -60,27 +62,27 @@ The SQL layer is structured in logical stages:
 
 1. **Data Quality Checks**
 
-- Identify NULLs, duplicates, and invalid values
+     - Identify NULLs, duplicates, and invalid values
 
-- Validate ranges and data consistency
+     - Validate ranges and data consistency
 
 2. **Data Transformation**
 
-- Standardize text fields
+     - Standardize text fields
 
-- Create derived columns (age bands, income bands, loan bands)
+     - Create derived columns (age bands, income bands, loan bands)
 
 3. **Business Logic**
 
-- Join customer, loan, credit, and status data
+     - Join customer, loan, credit, and status data
 
-- Produce a loan-level master dataset
+     - Produce a loan-level master dataset
 
 4. **Analytical Views**
 
-- Pre-aggregated KPIs
+    - Pre-aggregated KPIs
 
-- Trend and distribution views optimized for Tableau
+    - Trend and distribution views optimized for Tableau
 
 This layered approach reflects real-world enterprise analytics pipelines.
 
@@ -98,35 +100,35 @@ Before building dashboards, layout planning and navigation flow were designed us
 
 The wireframes are available in:
 
-tableau/dashbaord_pre_design_layout/
+  - **[tableau/dashbaord_pre_design_layout/](https://github.com/RASHEEDSHAIK7945/bank-loan-risk-portfolio-analytics-sql-tableau/tree/main/tableau/04_dashboard_design_pre_layout)**
 
 ---
 ## Dashboards Overview
 
 The Tableau solution consists of four dashboards:
 
- -  Home Navigation
+ -  **Home Navigation**
 
-    -  Central landing page providing navigation to all dashboards.
+     -  Central landing page providing navigation to all dashboards.
 
- - Executive Overview
+ -  **Executive Overview**
 
-    -  High-level KPIs including total loans, total customers, total loan amount,
+     -  High-level KPIs including total loans, total customers, total loan amount,
 default rate, defaulted exposure, and average interest rate.
 
- - Portfolio Trends
+ -  **Portfolio Trends**
 
-   -  Time-based analysis of loan issuance and default behavior to identify
+    -  Time-based analysis of loan issuance and default behavior to identify
 growth patterns and risk trends.
 
- - Portfolio Distribution
+ -  **Portfolio Distribution**
 
-   -  Breakdown of loan portfolio by loan type, loan amount bands,
+    -  Breakdown of loan portfolio by loan type, loan amount bands,
 and loan term categories to analyze exposure concentration.
 
 Dashboard screenshots are available in:
 
-tableau/dashboards/
+ - **[tableau/dashboards/](https://github.com/RASHEEDSHAIK7945/bank-loan-risk-portfolio-analytics-sql-tableau/tree/main/tableau/dashboard_screenshots)**
 
 ---
 
@@ -154,7 +156,7 @@ described in the dataset documentation.
 Business insights and actionable recommendations derived from the dashboards
 are documented separately in:
 
-docs/insights_and_recommendations.md
+ - **[docs/insights_and_recommendations.md](https://github.com/RASHEEDSHAIK7945/bank-loan-risk-portfolio-analytics-sql-tableau/blob/main/docs/insights_and_recommendations.md)**
 
 
 This ensures the project focuses not only on visualization but also on
@@ -163,14 +165,12 @@ decision-making value.
 ---
 
 ## Tools & Technologies
-
-- SQL Server – Data validation, transformation, and analytics
-
-- Tableau Public – Dashboard development and visualization
-
-- draw.io – Dashboard layout planning
-
-- GitHub – Version control and portfolio presentation
+- **[Datasets](https://github.com/RASHEEDSHAIK7945/bank-loan-risk-portfolio-analytics-sql-tableau/tree/main/datasets):** Access to the project dataset (csv files).
+- **[SQL Server Express](https://www.microsoft.com/en-us/sql-server/sql-server-downloads):** Data validation, transformation, and analytics
+- **[SQL Server Management Studio (SSMS)](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16):** GUI for managing and interacting with databases.
+- **[Tableau Public](https://public.tableau.com/app/profile/rasheed.shaik4381/vizzes):** Dashboard development and visualization
+- **[Git Repository](https://github.com/):** Set up a GitHub account and repository to manage, version, and collaborate on your code efficiently.
+- **[DrawIO](https://www.drawio.com/):** Design data architecture, models, flows, and diagrams.
 
 ---
 
@@ -179,8 +179,6 @@ decision-making value.
 Rasheed Shaik
 Aspiring Data Analyst | SQL | Tableau | Data Storytelling
 
----
 
 ## License
-
-This project is licensed under the MIT License.
+This project is licensed under the [MIT License](LICENSE). You are free to use, modify, and share this project with proper attribution.
