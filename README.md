@@ -44,7 +44,7 @@ bank-loan-risk-portfolio-analytics-sql-tableau/
 │   └── README.md                         # Dataset description & data dictionary
 │
 ├── tableau/
-│   ├── dashboard_pre_design_layout/      # draw.io wireframes used for planning
+│   ├── dashboard_pre_design_layout/      # draw.io wireframes used for dashboard planning
 │   ├── dashboards/                       # Final dashboard screenshots
 │   └── tableau_files/                    # Tableau packaged workbook (.twbx)
 │
@@ -85,7 +85,8 @@ The SQL layer is structured in logical stages:
 
     - Trend and distribution views optimized for Tableau
 
-This layered approach reflects real-world enterprise analytics pipelines.
+This layered approach reflects real-world enterprise analytics pipelines. It improves data reliability, reusability, and performance for downstream BI tools.
+
 
 ---
 
@@ -106,7 +107,7 @@ The wireframes are available in:
 ---
 ## 📖 Dashboards Overview
 
-The Tableau solution consists of four dashboards:
+The Tableau solution consists of four interconnected dashboards:
 
  -  **Home Navigation**
 
@@ -170,14 +171,14 @@ decision-making value.
 - **[SQL Server Express](https://www.microsoft.com/en-us/sql-server/sql-server-downloads):** Data validation, transformation, and analytics
 - **[SQL Server Management Studio (SSMS)](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16):** GUI for managing and interacting with databases.
 - **[Tableau Public](https://public.tableau.com/app/profile/rasheed.shaik4381/vizzes):** Dashboard development and visualization
-- **[Git Repository](https://github.com/):** Set up a GitHub account and repository to manage, version, and collaborate on your code efficiently.
+- **[Git & GitHub](https://github.com/):**  Version control, documentation, and project sharing.
 - **[DrawIO](https://www.drawio.com/):** Design data architecture, models, flows, and diagrams.
 
 ---
 
 ## Author
 
-Rasheed Shaik
+Rasheed Shaik  
 Aspiring Data Analyst | SQL | Tableau | Data Storytelling
 
 
