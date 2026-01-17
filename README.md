@@ -29,10 +29,9 @@ This solution enables stakeholders to:
 
 - Support data-driven lending and risk strategies
 
+
+## 📂 Repository Structure
 ```
-
-## Repository Structure
-
 bank-loan-risk-portfolio-analytics-sql-tableau/
 │
 ├── sql/
@@ -56,7 +55,9 @@ bank-loan-risk-portfolio-analytics-sql-tableau/
 └── LICENSE
 ```
 
+
 ## SQL Workflow
+
 
 The SQL layer is structured in logical stages:
 
@@ -103,7 +104,7 @@ The wireframes are available in:
   - **[tableau/dashbaord_pre_design_layout/](https://github.com/RASHEEDSHAIK7945/bank-loan-risk-portfolio-analytics-sql-tableau/tree/main/tableau/04_dashboard_design_pre_layout)**
 
 ---
-## Dashboards Overview
+## 📖 Dashboards Overview
 
 The Tableau solution consists of four dashboards:
 
@@ -164,7 +165,7 @@ decision-making value.
 
 ---
 
-## Tools & Technologies
+## 🛠️ Tools & Technologies
 - **[Datasets](https://github.com/RASHEEDSHAIK7945/bank-loan-risk-portfolio-analytics-sql-tableau/tree/main/datasets):** Access to the project dataset (csv files).
 - **[SQL Server Express](https://www.microsoft.com/en-us/sql-server/sql-server-downloads):** Data validation, transformation, and analytics
 - **[SQL Server Management Studio (SSMS)](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16):** GUI for managing and interacting with databases.
