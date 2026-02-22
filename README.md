@@ -37,25 +37,33 @@ This solution enables stakeholders to:
 ```
 bank-loan-risk-portfolio-analytics-sql-tableau/
 │
-├── sql/
-│   ├── 01_data_quality_checks.sql        # Data validation & quality checks
-│   ├── 02_data_transformation.sql        # Standardization & derived columns
-│   ├── 03_business_logic.sql             # Master loan-level dataset
-│   └── 04_analytical_views.sql           # KPI & analytical views
-│
-├── datasets/
-│   └── README.md                         # Dataset description & data dictionary
-│
-├── tableau/
-│   ├── dashboard_pre_design_layout/      # draw.io wireframes used for dashboard planning
-│   ├── dashboards/                       # Final dashboard screenshots
-│   └── tableau_files/                    # Tableau packaged workbook (.twbx)
+├── data/
+│   └── raw/
+│       ├── Credit_Profile.csv          # Source: customer credit attributes (SQL Server load)
+│       ├── Customers.csv               # Source: customer demographic & profile data
+│       ├── Loan_Status.csv             # Source: loan repayment & default status
+│       └── Loans.csv                   # Source: loan-level transactional records
 │
 ├── docs/
-│   └── insights_and_recommendations.md   # Business insights & recommendations
+│   ├── assumptions.md                  # Project assumptions & data limitations
+│   ├── business_problem.md             # Business context & analytical objectives
+│   └── insights_and_recommendations.md # Key insights & business recommendations
 │
-├── README.md
-└── LICENSE
+├── sql/
+│   ├── 01_data_quality_checks.sql      # Data validation & anomaly detection
+│   ├── 02_data_transformation.sql      # Cleansing, standardization, feature engineering
+│   ├── 03_business_logic.sql           # KPI logic & domain rules
+│   └── 04_analytical_views.sql         # Final views for BI tools (Tableau)
+│
+├── tableau/
+│   ├── 01_user_requirements            # Stakeholder questions & KPI definitions
+│   ├── 02_chart_selection              # Visualization rationale
+│   ├── 03_data_modeling                # Tableau data model design
+│   ├── 04_dashboard_design_pre_layout  # Wireframes & pre-layout designs
+│   └── dashboard_screenshots           # Final dashboard screenshots
+│
+├── LICENSE
+└── README.md
 ```
 
 
