@@ -7,12 +7,13 @@ This project follows a database-first analytics approach, where all data cleansi
 
 Each Tableau dashboard connects to one CSV file, exported from a validated SQL analytical view.
 
-Dashboard	Data Source
-Executive Overview	kpi_executive_overview.csv
-Risk & Default Analysis	risk_default_analysis.csv
-Portfolio Distribution	portfolio_distribution.csv
-Loan Default Trends	loan_default_trends.csv
-Drill-down / Exploration (optional)	loan_risk_master.csv
+| Report Page / Dashboard  | Data Source             |
+| ------------------------ | --------------------------- |
+| Executive Overview       | `KPI_Executive_Overview.csv` |
+| Risk & Default Analysis  | `	Risk_Default_Analysis.csv` |
+| Portfolio Distribution   | `Portfolio_Distribution.csv` |
+| Loan Default Trends      | `Loan_Default_Trends.csv`    |
+| Drill-down / Exploration | `Loan_Risk_Master.csv`       |
 3. Data Granularity
 
 Executive Overview: Single-row, fully aggregated KPI-level data
